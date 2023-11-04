@@ -1,0 +1,11 @@
+#mode:checked ~ .dark-icon{
+    display: none;
+    
+
+}
+#mode:checked ~ .light-icon{
+    display: block;
+}
+
+
+
