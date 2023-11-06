@@ -1,11 +1,74 @@
 #mode:checked ~ .dark-icon{
     display: none;
-    
-
 }
 #mode:checked ~ .light-icon{
     display: block;
 }
+:root:has(#mode:checked){
+    --main-1-hue: 0;
+    --main-1-sat: 0%;
+    --main-1-lightness: 100%;
+    --main-1-color: hsl(var(--main-1-hue),var(--main-1-sat) ,var(--main-1-lightness) );
+    
+    --main-2-hue: 240;
+    --main-2-sat: 7%;
+    --main-2-lightness: 23%;
+    --main-2-color: hsl(var(--main-2-hue),var(--main-2-sat) ,var(--main-2-lightness) );
+    
+    --main-3-hue: 0;
+    --main-3-sat: 0%;
+    --main-3-lightness: 62%;
+    --main-3-color: hsl(var(--main-3-hue),var(--main-3-sat) ,var(--main-3-lightness) );
 
+    /* *** SECONDARY COLORS *** */
 
+    --secondary-hue: 35;
+    --secondary-sat: 72%;
+    --secondary-lightness: 44%;
+    --secondary-lightness-hov: 49%;
+    --secondary-color: hsl(var(--secondary-hue), var(--secondary-sat), var(--secondary-lightness) );
+    --secondary-color-hov: hsl(var(--secondary-hue), var(--secondary-sat), var(--secondary-lightness-hov) );
 
+    /* ********* BACKGROUND COLORS ********* */
+
+    /* *** LIGHT BG *** */
+    --bg-1-hue: 0;
+    --bg-1-sat: 0%;
+    --bg-1-lightness: 15%;
+    --bg-2-color: hsl(var(--bg-1-hue), var(--bg-1-sat) , var(--bg-1-lightness) );
+
+    
+    /* *** DARK BG *** */
+    --bg-2-hue: 0;
+    --bg-2-sat: 0%;
+    --bg-2-lightness: 13%;
+    --bg-1-color: hsl(var(--bg-2-hue), var(--bg-2-sat) , var(--bg-2-lightness) );
+
+}
+:root:has(#mode:checked) ::-moz-selection { /* Code for Firefox */
+    color: var(--main-1-color);
+    background: hsl(35,63%,35%);
+  }
+  
+:root:has(#mode:checked) ::selection {
+    color: #171717;
+    background: hsl(35,63%,35%);
+  }
+:root:has(#mode:checked) :is(.nav-bar, .chef-item, .contact form) {
+    background-color: #171717;
+}
+:root:has(#mode:checked) .contact :is(.info){
+    background-color: #0d0d0d;
+}
+:root:has(#mode:checked) .home .par2{
+    color: #9f9f9f;
+}
+:root:has(#mode:checked) .info-inner h3{
+   color: #adadad; 
+}
+:root:has(#mode:checked) .chef-item .img::after{
+    background: url(../img/team-shape-dark.svg);
+}
+:root:has(#mode:checked) button:hover{
+    background-color: var(--secondary-color-hov);
+}

@@ -52,6 +52,14 @@
     --main-2-font: 'Inter', sans-serif;
     --secondary-font: 'Amatic SC', sans-serif;
 }
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background-color: hsl(0,63%,59%);
+}
+::selection {
+    color: #fff;
+    background-color: hsl(0,63%,59%);
+  }
 body{
     font-family: var(--main-1-font);
     color: var(--main-1-color);
@@ -169,7 +177,6 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    
 }
 .home-container{
     /* background-color: #bff; */
@@ -232,7 +239,6 @@ h2{
 }
 .book:hover{
     background-color: var(--secondary-color-hov);
-
 }
 /* .home-buttons .watch{
     position: relative;
@@ -304,7 +310,8 @@ h2{
 
 }
 .home-picture img{
-    filter: drop-shadow(5px 5px 5px #222);
+    /* box-shadow: 4px 4px 9px #000a; */
+    filter: drop-shadow(4px 4px 9px #000a);
 }
 .home-picture img:hover{
     animation: shake 0.9s;    
@@ -519,8 +526,9 @@ h2{
 
 /* ****************** CONTACT ****************** */
 .contact{
-    margin: 80px 0;
+    padding: 80px 0;
     padding-bottom: 100px;
+    background-color: var(--bg-1-color);
     /* background-color: #faf; */
 }
 .contact-container{
@@ -550,7 +558,7 @@ h2{
    align-items: center;
 }
 .info-icon{
-    padding: 20px;
+    padding: 15px;
     margin-right: 10px;
     background-color: var(--secondary-color);
     color: var(--bg-1-color);
@@ -578,7 +586,9 @@ form{
 form input, textarea{
     padding: 15px;
     margin-bottom: 15px;
+    border: none;
     border: 3px solid var(--bg-2-color) ;
+    transition: border 0.3s;
 }
 .form-inner{
     display: flex;
@@ -594,6 +604,10 @@ textarea{
     min-height: 100px;
     max-height: 200px;
     margin-bottom: 30px;
+}
+.contact form :is(input, textarea):focus{
+    outline: none;
+    border: 2px solid var(--secondary-color);
 }
 .contact button{
     background-color: var(--secondary-color);
@@ -661,7 +675,7 @@ textarea{
 }
 .footer .sec1 h3{
     text-align: center;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid #5a5a5a;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -677,19 +691,31 @@ textarea{
 .footer .sec2 p{
     margin-bottom: 15px;
 }
-.foot-sec2-inner1{
+.sub-inner{
+    display: flex;
+    /* justify-content: space-between; */
     margin-bottom: 15px;
 }
+.foot-sec2-inner1 button:hover{
+    background-color: var(--secondary-color-hov);
+}
 .footer .sec2 input{
-    width: 500px;
+    /* width: 500px; */
     padding: 12px;
+    flex-grow: 1;
+    margin-right: 5px ;
 }
 .footer .sec2 button{
-    color: var(--bg-1-color);
+    cursor: pointer;
+    color: #000;
     background-color: var(--secondary-color);
-    font-family: var(--main-1-font);
+    /* font-family: var(--main-2-font); */
+    font-weight: 500;
+    font-size: 14px;
     border: none;
+    width: 115px;
     padding: 11px;
+    transition: background-color 0.3s;
 }
 .footer .sec2 .links-container{
     display: flex;
@@ -702,7 +728,22 @@ textarea{
 .footer .sec2 i{
     margin-right: 6px;
 }
+.footer .sec2 button i{
+    margin-right: 6px;
+    font-size: 15px;
+    
+}
+.footer .sec2 .links-container li{
+    /* background-color: #faf; */
+    margin-right: 15px;
+    padding: 5px 3px;
+    transition: all 0.4s;
 
+}
+.footer .sec2 .links-container li:hover{
+    background-color: #222222;
+    transform: translateX(5px);
+}
 .footer .sec3 ul{
     display: flex;
     flex-direction: column;
@@ -716,6 +757,9 @@ textarea{
     align-items: center;
     /* align-content: center; */
     margin-bottom: 17px;
+}
+.footer .sec3 li .foot-icon a{
+    color: var(--secondary-color);
 }
 .footer .sec3 .foot-icon{
     /* background-color: #5a5; */
