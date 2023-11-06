@@ -64,6 +64,9 @@ body{
     font-family: var(--main-1-font);
     color: var(--main-1-color);
 }
+html {
+    scroll-behavior: smooth;
+  }  
 ul{
     list-style: none;   
     display: flex;
@@ -112,6 +115,12 @@ h2{
     z-index: 99999;
     /* display: none; */
 }
+/* .nav-menu .menu-item a:active{
+    color: var(--bg-1-color);
+} */
+
+
+
 .nav-container{
     width: 87%;
     /* background-color: #bff; */
@@ -124,7 +133,7 @@ h2{
 .nav-bar li{
     padding: 5px 10px;
     cursor: pointer;
-    
+    margin-right: 5px;
     
 }
 .nav-bar a{
@@ -167,6 +176,37 @@ h2{
     width: 20px;
     text-align: center;
 }
+:root:has(#home:target) .nav-bar .menu1 a{
+    color: var(--main-1-color);
+}
+:root:has(#home:target) .nav-bar .menu1 a::after{
+    width: 100%;
+}
+:root:not(:has(:target)) .nav-bar .menu1 a::after{
+    color: var(--main-1-color);
+}
+:root:not(:has(:target)) .nav-bar .menu1 a{
+    color: var(--main-1-color);
+}
+:root:has(#chefs:target) .nav-bar .menu2 a{
+    color: var(--main-1-color);
+}
+:root:has(#chefs:target) .nav-bar .menu2 a::after{
+    width: 100%;
+}
+:root:has(#gallery:target) .nav-bar .menu3 a{
+    color: var(--main-1-color);
+}
+:root:has(#gallery:target) .nav-bar .menu3 a::after{
+    width: 100%;
+}
+:root:has(#contact:target) .nav-bar .menu4 a{
+    color: var(--main-1-color);
+}
+:root:has(#contact:target) .nav-bar .menu4 a::after{
+    width: 100%;
+}
+
 
     /* ****************** HOME ****************** */
 .home{
@@ -555,6 +595,7 @@ h2{
    margin-bottom: 20px;
    padding: 20px;
    display: flex;
+   
    align-items: center;
 }
 .info-icon{
@@ -581,6 +622,9 @@ form{
     box-shadow: 0px 0px 21px 0px #0003;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
 }
 form input, textarea{
@@ -620,6 +664,9 @@ textarea{
     font-size: 15px;
     font-weight: normal;
     cursor: pointer;
+}
+.contact button:hover{
+    background-color: var(--secondary-color-hov);
 }
 /* ****************** FOOTER ****************** */
 .footer{
@@ -696,9 +743,7 @@ textarea{
     /* justify-content: space-between; */
     margin-bottom: 15px;
 }
-.foot-sec2-inner1 button:hover{
-    background-color: var(--secondary-color-hov);
-}
+
 .footer .sec2 input{
     /* width: 500px; */
     padding: 12px;
@@ -707,7 +752,7 @@ textarea{
 }
 .footer .sec2 button{
     cursor: pointer;
-    color: #000;
+    color: var(--bg-1-color);
     background-color: var(--secondary-color);
     /* font-family: var(--main-2-font); */
     font-weight: 500;
@@ -731,6 +776,7 @@ textarea{
 .footer .sec2 button i{
     margin-right: 6px;
     font-size: 15px;
+    color: var(--bg-1-color);
     
 }
 .footer .sec2 .links-container li{
@@ -774,6 +820,7 @@ textarea{
     padding: 0 18px 0 5px;
 }
 
-
-
+.foot-sec2-inner1 button:hover{
+    background-color: var(--secondary-color-hov);
+}
 

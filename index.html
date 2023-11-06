@@ -20,7 +20,7 @@
     </head>
     <body>
         <!-- ****************** NAV BAR ****************** -->
-        <div class="nav-bar">
+        <div id="nav" class="nav-bar">
             <div class="nav-container">
                 <div class="logo nav-item">
                     <div class="logo-inner">
@@ -30,10 +30,28 @@
                 </div>
                 <div class="nav-menu nav-item">
                     <ul>
-                        <li class="menu-item"><a href="">Home</a></li>
-                        <li class="menu-item"><a href="">Chefs</a></li>
-                        <li class="menu-item"><a href="">Gallery</a></li>
-                        <li class="menu-item"><a href="">Contact</a></li>
+                        <!-- <input type="radio" id="home-active" name="active" class="active"  /> -->
+                        <li class="menu-item menu1">
+                            <!-- <label for="home-active"></label> -->
+                            <a href="#home">Home</a>
+                        </li>
+                        <!-- <input type="radio" id="chefs-active" name="active" class="active"  /> -->
+                        <li class="menu-item menu2">
+                            <!-- <label for="chefs-active"> -->
+                                <a href="#chefs">Chefs</a>
+                            <!-- </label> -->
+                        </li>
+                        <!-- <input type="radio" id="gallery-active" name="active" class="active"  /> -->
+                        <li class="menu-item menu3">
+                            <!-- <label for="gallery-active"></label> -->
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <!-- <input type="radio" id="contact-active" name="active" class="active"  /> -->
+                        <li class="menu-item menu4">
+                            <!-- <label for="contact-active"> -->
+                                <a href="#contact">Contact</a>
+                            <!-- </label> -->
+                        </li>
                     </ul>
                 </div>
                 <div class="mode-container nav-item">
@@ -50,7 +68,7 @@
             </div>
         </div>
         <!-- ****************** HOME ****************** -->
-        <div class="home">
+        <div id="home" class="home">
             <div class="home-container">
                 <div class="home-content home-item">
                     <div class="home-content-inner">
@@ -79,7 +97,7 @@
             </div>
         </div>
         <!-- ****************** CHEFS ****************** -->
-        <div class="chefs">
+        <div id="chefs" class="chefs">
             <div class="chefs-header section-header">
                 <h2>CHEFS</h2>
                 <p>Our <span>Professional</span> Chefs</p>
@@ -161,7 +179,7 @@
             </div>
         </div>
         <!-- ****************** GALLERY ****************** -->
-        <div class="gallery">
+        <div id="gallery" class="gallery">
             <div class="gallery-header section-header">
                 <h2>GALLERY</h2>
                 <p>Check <span>Our Gallery</span></p>
@@ -219,7 +237,7 @@
             </div>
         </div>
         <!-- ****************** CONTACT ****************** -->
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="contact-container">
             <div class="contact-header section-header">
                 <h2>CONTACT</h2>
