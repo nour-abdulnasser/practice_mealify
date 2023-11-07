@@ -49,6 +49,10 @@
     color: var(--main-1-color);
     background: hsl(35,63%,35%);
   }
+
+:root:has(#mode:checked) ::-webkit-scrollbar-track {
+    background: #5a5a5a;
+}
   
 :root:has(#mode:checked) ::selection {
     color: #171717;

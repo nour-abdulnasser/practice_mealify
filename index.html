@@ -55,14 +55,23 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mode-container nav-item">
-                    <input type="checkbox" id="mode" class="mode-box" hidden />
-                    <label class="light-icon" for="mode">
-                        <i class="fa-regular fa-sun"></i>
+                <div class="far-right-check">
+
+                    <div class="mode-container nav-item">
+                        <input type="checkbox" id="mode" class="mode-box" hidden />
+                        <label class="light-icon" for="mode">
+                            <i class="fa-regular fa-sun"></i>
+                        </label>
+                        <label class="dark-icon" for="mode">
+                            <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="menu-check">
                     </label>
-                    <label class="dark-icon" for="mode">
-                        <i class="fa-solid fa-moon"></i>
+                    <input type="checkbox" id="menu-mode" class="menu-mode-box" hidden />
+                    <label class="menu-bars-icon" for="menu-mode">
+                        <i class="fa-solid fa-bars"></i>
                     </label>
+                    </div>
                 </div>
 
                 
@@ -367,6 +376,41 @@
                 </div>
             </div>
         </div>
+
+        <div class="side-menu">
+            <div class="close-container">
+                <label class="close-menu-icon" for="menu-mode">
+                    <i class="fa-solid fa-x"></i>
+                </label>
+            </div>
+                <ul>
+                    <!-- <input type="radio" id="home-active" name="active" class="active"  /> -->
+                    <li class="menu-item menu1">
+                        <!-- <label for="home-active"></label> -->
+                        <a href="#home">Home</a>
+                    </li>
+                    <!-- <input type="radio" id="chefs-active" name="active" class="active"  /> -->
+                    <li class="menu-item menu2">
+                        <!-- <label for="chefs-active"> -->
+                            <a href="#chefs">Chefs</a>
+                        <!-- </label> -->
+                    </li>
+                    <!-- <input type="radio" id="gallery-active" name="active" class="active"  /> -->
+                    <li class="menu-item menu3">
+                        <!-- <label for="gallery-active"></label> -->
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <!-- <input type="radio" id="contact-active" name="active" class="active"  /> -->
+                    <li class="menu-item menu4">
+                        <!-- <label for="contact-active"> -->
+                            <a href="#contact">Contact</a>
+                        <!-- </label> -->
+                    </li>
+                </ul>
+    
+
+        </div>
+
 
     </body>
 </html>

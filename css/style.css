@@ -60,6 +60,28 @@
     color: #fff;
     background-color: hsl(0,63%,59%);
   }
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--bg-1-hue), var(--bg-1-sat) , 80%);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-1-color);
+    border-radius: 5px;
+    /* height: 50px; */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
 body{
     font-family: var(--main-1-font);
     color: var(--main-1-color);
@@ -827,4 +849,105 @@ textarea{
 .foot-sec2-inner1 button:hover{
     background-color: var(--secondary-color-hov);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-bars-icon {
+    /* background-color: #faf; */
+    font-size: 25px;
+    cursor: pointer;
+}
+:root:has(#menu-mode:not(:checked)) .side-menu{
+    display:none
+}
+:root:has(#menu-mode:checked) .side-menu{
+    display: block;
+    transform: translateX(0%);
+    
+}
+:root:has(#menu-mode:checked) .side-menu{
+    transform: translateX(0%);
+    
+}
+.side-menu{
+    width:  350px;
+    padding: 50px;
+    transition: transform 0.3s;
+
+}
+.side-menu label{
+    /* background-color: purple; */
+    cursor: pointer;
+    color: #858585;
+    transition: color 0.3s;
+    font-weight: 600;
+    font-size: 20px;
+    /* align-self: right; */
+}
+.side-menu label:hover{
+    color: var(--main-1-color);
+
+}
+.far-right-check{
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+
+.side-menu .close-container{
+    /* background-color: blue; */
+text-align: right;
+}
+.side-menu ul{
+    display: block;
+}
+.side-menu li{
+    padding: 10px 0;
+}
+.side-menu a{
+    color: var(--main-3-color);
+    font-weight: 600;
+    position: relative; 
+}
+.side-menu ul a::after{
+    content: "";
+    position: absolute;
+    bottom: -6;
+    left: 0;
+    background-color: var(--secondary-color);   
+    width: 0%;
+    height: 3px;
+    transition: width 0.4s ease-out;
+
+}
+.side-menu ul a:hover::after{
+    width: 100%;
+}
+.side-menu ul a:hover{
+    color: var(--main-1-color);
+}
+
+.side-menu :has(a:active) .side-menu{
+    transform: translateX(110%);
+}
+
+
+
+
+
+
+
 

@@ -1,4 +1,60 @@
+
+/******************************************/
+/******************************************/
+/******************************************/
+@media screen and (min-width: 1200px){
+    .nav-bar .nav-menu{
+        display: block;
+    }
+    .side-menu{
+        display: none;
+    }
+    .menu-bars-icon{
+        display: none;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px) {
+    
+/*************************************/
+/************ NAV BAR LIST ***********/
+/*************************************/
+
+.nav-bar .nav-menu{
+    display: none;
+}
+body{
+    position: relative;
+    transition: transform 0.3s;
+
+}
+.side-menu{
+    background-color: var(--bg-1-color);
+    box-shadow: 10px 10px 10px 10px #00000021;
+    position: fixed;
+    z-index: 9999999999999999999999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(110%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 .gallery{
     height: 200vh;
@@ -51,7 +107,9 @@
 
 
 
-
+/******************************************/
+/******************************************/
+/******************************************/
 
 
 
