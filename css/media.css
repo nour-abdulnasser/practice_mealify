@@ -1,0 +1,421 @@
+@media screen and (max-width: 1200px) {
+    
+.gallery{
+    height: 200vh;
+    padding-bottom: 200px;
+    width: 100vw;
+
+}
+.gallery .images-container{
+    width: 100%;
+    flex-wrap: wrap;
+    width: 90%;
+    align-content: center;
+    height: 200vh;
+    padding-bottom: 200px;
+}
+.gallery .images-container .image{
+    margin: 20px;
+}
+
+
+
+
+
+
+.footer-container{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.footer-container .sec3{
+    order: 1;
+    width: 50%;
+}
+.footer-container .sec1{
+    order: 0;
+    width: 50%;
+
+}
+.footer-container .sec2{
+    order: 3;
+    width: 100%;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 994px){
+    .home{
+        flex-direction: column;
+        height: auto;
+       }
+    .home-container{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        height: auto;
+        align-items: center;
+        
+        align-content: center;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+    .home-item{
+        width: 100%;
+    }
+    .home-picture{
+        width: 80%;
+        margin: 30px 0;
+        /* padding-left: 50;
+        padding-right: 50; */
+        /* text-align: center; */
+        /* margin: 20px 0; */
+    }
+    .home-picture img{
+        /* margin: 0; */
+        /* padding: 0; */
+    }
+    .home-content{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .home-content-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-buttons{
+        margin-top: 5px;
+    }
+    .home-content .par1 p{
+        margin-bottom: 5px;
+    }
+    .book {
+        border-radius: 25px;
+        padding: 14px 30px;
+    }
+/*****************************************************/
+/**********************  CHEFS  **********************/
+/*****************************************************/
+.chefs{
+    padding: 80px 0;
+    padding-left: 15px;
+    height: auto;
+}
+.chefs-container{
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    /* margin: auto; */
+    /* justify-content: space-around; */
+    align-content: space-between;
+    /* align-items: ; */
+    width: 100%;
+
+}
+.chefs-container .chef-item{
+    width: 45%;
+    margin: 15px;
+}
+
+/*****************************************************/
+/*********************  GALLERY  *********************/
+/*****************************************************/
+.gallery{
+    height: 2000px;
+    /* padding-bottom: 200px; */
+    width: 100vw;
+
+}
+.gallery .images-container{
+    width: 100vw;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    align-content: center;
+    height: 2000px;
+    /* padding-bottom: 200px; */
+
+
+}
+.gallery .image{
+    width: 48.5%;
+}
+.gallery .gal-pizza{
+    order: 0;
+}
+.gallery .gal-burger{
+    order: 1;
+}
+.gallery .gal-pizza2{
+    order: 2;
+
+}
+.gallery .gal-frittata{
+    order: 3;
+
+}
+.gallery .gal-steak{
+    order: 4;
+
+}
+.gallery .gal-chicken{
+    order: 5;
+
+}
+.gallery .gal-kebab{
+    order: 6;
+
+}
+/*****************************************************/
+/*********************  CONTACT  *********************/
+/*****************************************************/
+
+.form-inner{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.form-inner input{
+    width: 100%;
+}
+
+/*****************************************************/
+/*********************  FOOTER  **********************/
+/*****************************************************/
+
+.footer-container{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.footer-container .sec3{
+    order: 1;
+    width: 50%;
+}
+.footer-container .sec1{
+    order: 0;
+    width: 50%;
+
+}
+.footer-container .sec2{
+    order: 3;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************/
+/*********************  smallest  ********************/
+/*****************************************************/
+@media screen and (max-width: 768px){
+   .home{
+    flex-direction: column;
+    height: auto;
+   }
+    .home-container{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        height: auto;
+        align-items: center;
+        
+        align-content: center;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+    .home-item{
+        width: 100%;
+    }
+    .home-picture{
+        margin: 30px 0;
+        padding: 0;
+        /* text-align: center; */
+        /* margin: 20px 0; */
+    }
+    .home-picture img{
+        /* margin: 0; */
+        /* padding: 0; */
+    }
+    .home-content{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .home-content-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-buttons{
+        margin-top: 5px;
+    }
+    .home-content .par1 p{
+        margin-bottom: 5px;
+    }
+    .book {
+        border-radius: 25px;
+        padding: 14px 30px;
+    }
+/*****************************************************/
+/**********************  CHEFS  **********************/
+/*****************************************************/
+.chefs{
+    padding: 80px 0;
+    height: auto;
+   /* justify-content: center; */
+
+}
+.chefs-container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* justify-content: center; */
+}
+.chefs-container .chef-item{
+    width: 90%;
+/* margin: auto; */
+    margin-bottom: 30px;
+}
+
+/*****************************************************/
+/*********************  GALLERY  *********************/
+/*****************************************************/
+
+.gallery{
+    height: auto;
+    padding-bottom: 65px;
+}
+.gallery .images-container{
+    height: auto;
+    align-content: center;
+
+}
+.gallery .images-container .image{
+    width: 100%;
+}
+
+/*****************************************************/
+/*********************  CONTACT  *********************/
+/*****************************************************/
+
+.contact-container{
+    /* background-color: #bff; */
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.contact-info-container{
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info-container .info{
+    width: 100%;
+}
+.form-inner{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.form-inner input{
+    width: 100%;
+}
+
+/*****************************************************/
+/*********************  FOOTER  **********************/
+/*****************************************************/
+.footer{
+    padding: 20 10px;
+    
+}
+.footer-container{
+    width: 100%;
+    /* margin: auto; */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.footer :is(.sec1, .sec3){
+    width: 100%;
+}
+.sub-inner{
+    flex-direction: column;    
+    align-items: center;
+}
+.sub-inner input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.footer .sec2 button{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

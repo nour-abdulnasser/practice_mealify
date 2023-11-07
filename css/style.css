@@ -105,6 +105,7 @@ h2{
     
     position: fixed;
     width: 100%;
+    /* width: 100vw; */
     padding:  23px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +184,8 @@ h2{
     width: 100%;
 }
 :root:not(:has(:target)) .nav-bar .menu1 a::after{
-    color: var(--main-1-color);
+    width: 100%;
+    
 }
 :root:not(:has(:target)) .nav-bar .menu1 a{
     color: var(--main-1-color);
@@ -206,8 +208,6 @@ h2{
 :root:has(#contact:target) .nav-bar .menu4 a::after{
     width: 100%;
 }
-
-
     /* ****************** HOME ****************** */
 .home{
     background-color: var(--bg-2-color);
@@ -217,6 +217,7 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+
 }
 .home-container{
     /* background-color: #bff; */
@@ -387,6 +388,9 @@ h2{
     /* padding: 100px 0; */
     /* overflow: hidden; */
 }
+/* #chefs{
+    scroll-padding-top: 215px;
+} */
 /* .chefs-header{ */
     /* background-color: #bad; */
     /* margin-bottom: 20px;
